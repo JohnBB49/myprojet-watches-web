@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+
+<h:body>
+	
+	<ui:composition template="/WEB-INF/pages/layout.xhtml">
+	
+		<ui:define name="carousel">
+		
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		        <!-- Indicators -->
+		        <ol class="carousel-indicators">
+		            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		            <li data-target="#myCarousel" data-slide-to="1"></li>
+		            <li data-target="#myCarousel" data-slide-to="2"></li>
+		        </ol>
+		        
+		        <!-- Wrapper for slides -->
+		        <div class="carousel-inner" role="listbox">
+		            <div class="item active">
+						<h:graphicImage library="images" name="/sliders/watch-1.jpg" alt="Watches" />
+		            </div>
+		
+		            <div class="item">
+						<h:graphicImage library="images" name="/sliders/watch-2.jpg" alt="Watches" />
+		            </div>
+		            
+		            <div class="item">
+						<h:graphicImage library="images" name="/sliders/watch-3.jpg" alt="Watches" />
+		            </div>
+		        </div>
+		    </div>
+		    <!-- ./end carousel -->
+		
+		</ui:define>
+	
+		<ui:define name="content">
+		
+			<div class="product">
+		        <div class="container">
+		            <div class="col-sm-4">
+		                <div class="thumbnail">
+		                    <h3><span class="label label-danger">New</span></h3>
+		                    
+		                    <h:graphicImage library="images" name="/products/p-1.png" alt="Watches" />
+		                    
+		                    <div class="caption">
+		                        <h3>Lorem</h3>
+		                        
+		                        <span>Prices: 1.200.000 VND</span>
+		                    </div><!-- ./end caption -->
+		                    
+		                    <div class="wrap-text">
+		                        <div class="view">
+		                            <a href="views/detail.html"><i class="glyphicon glyphicon-eye-open"></i>&nbsp;&nbsp;View</a>
+		                        </div>
+		                        
+		                        <div class="clearfix"></div>
+		
+		                        <div class="add-cart">
+		                            <a href="views/cart.html"><i class="glyphicon glyphicon-shopping-cart"></i>&nbsp;&nbsp;Add to cart</a>
+		                        </div>
+		                    </div><!-- ./end wrap-text -->
+		                </div><!-- ./end thumbnail -->
+		            </div> <!-- ./end product 1 -->
+		            
+		            <div class="col-sm-4">
+		                <div class="thumbnail">
+		                    <h3><span class="label label-danger">New</span></h3>
+		                    
+		                    <img src="/MyProject/webapp/resources/images/products/p-2.png" alt="Watches" />
+		                    
+		                    <div class="caption">
+		                        <h3>Lorem</h3>
+		                        
+		                        <span>Prices: 1.200.000 VND</span>
+		                    </div><!-- ./end caption -->
+		                    
+		                    <div class="wrap-text">
+		                        <div class="view">
+		                            <a href="views/detail.html"><i class="fa fa-eye"></i>&nbsp;&nbsp;View</a>
+		                        </div>
+		                        
+		                        <div class="clearfix"></div>
+		
+		                        <div class="add-cart">
+		                            <a href="views/cart.html"><i class="fa fa-cart-plus"></i>&nbsp;&nbsp;Add to cart</a>
+		                        </div>
+		                    </div><!-- ./end wrap-text -->
+		                </div><!-- ./end thumbnail -->
+		            </div> <!-- ./end product 2 -->
+		            
+		            <div class="col-sm-4">
+		                <div class="thumbnail">
+		                    <h3><span class="label label-danger">New</span></h3>
+		                    
+		                    <img src="images/products/p-3.png" alt="Watches" />
+		                    
+		                    <div class="caption">
+		                        <h3>Lorem</h3>
+		                        
+		                        <span>Prices: 1.200.000 VND</span>
+		                    </div><!-- ./end caption -->
+		                    
+		                    <div class="wrap-text">
+		                        <div class="view">
+		                            <a href="views/detail.html"><i class="fa fa-eye"></i>&nbsp;&nbsp;View</a>
+		                        </div>
+		                        
+		                        <div class="clearfix"></div>
+		
+		                        <div class="add-cart">
+		                            <a href="views/cart.html"><i class="fa fa-cart-plus"></i>&nbsp;&nbsp;Add to cart</a>
+		                        </div>
+		                    </div><!-- ./end wrap-text -->
+		                </div><!-- ./end thumbnail -->
+		            </div> <!-- ./end product 3 -->
+		            
+		            <div class="col-sm-4">
+		                <div class="thumbnail">
+		                    <h3><span class="label label-danger">New</span></h3>
+		                    
+		                    <img src="images/products/p-4.png" alt="Watches" />
+		                    
+		                    <div class="caption">
+		                        <h3>Lorem</h3>
+		                        
+		                        <span>Prices: 1.200.000 VND</span>
+		                    </div><!-- ./end caption -->
+		                    
+		                    <div class="wrap-text">
+		                        <div class="view">
+		                            <a href="views/detail.html"><i class="fa fa-eye"></i>&nbsp;&nbsp;View</a>
+		                        </div>
+		                        
+		                        <div class="clearfix"></div>
+		
+		                        <div class="add-cart">
+		                            <a href="views/cart.html"><i class="fa fa-cart-plus"></i>&nbsp;&nbsp;Add to cart</a>
+		                        </div>
+		                    </div><!-- ./end wrap-text -->
+		                </div><!-- ./end thumbnail -->
+		            </div> <!-- ./end product 4 -->
+		            
+		            <div class="col-sm-4">
+		                <div class="thumbnail">
+		                    <h3><span class="label label-danger">New</span></h3>
+		                    
+		                    <img src="images/products/p-5.png" alt="Watches" />
+		                    
+		                    <div class="caption">
+		                        <h3>Lorem</h3>
+		                        
+		                        <span>Prices: 1.200.000 VND</span>
+		                    </div><!-- ./end caption -->
+		                    
+		                    <div class="wrap-text">
+		                        <div class="view">
+		                            <a href="views/detail.html"><i class="fa fa-eye"></i>&nbsp;&nbsp;View</a>
+		                        </div>
+		                        
+		                        <div class="clearfix"></div>
+		
+		                        <div class="add-cart">
+		                            <a href="views/cart.html"><i class="fa fa-cart-plus"></i>&nbsp;&nbsp;Add to cart</a>
+		                        </div>
+		                    </div><!-- ./end wrap-text -->
+		                </div><!-- ./end thumbnail -->
+		            </div> <!-- ./end product 5 -->
+		            
+		            <div class="col-sm-4">
+		                <div class="thumbnail">
+		                    <h3><span class="label label-danger">New</span></h3>
+		                    
+		                    <img src="images/products/p-6.png" alt="Watches" />
+		                    
+		                    <div class="caption">
+		                        <h3>Lorem</h3>
+		                        
+		                        <span>Prices: 1.200.000 VND</span>
+		                    </div><!-- ./end caption -->
+		                    
+		                    <div class="wrap-text">
+		                        <div class="view">
+		                            <a href="views/detail.html"><i class="fa fa-eye"></i>&nbsp;&nbsp;View</a>
+		                        </div>
+		                        
+		                        <div class="clearfix"></div>
+		
+		                        <div class="add-cart">
+		                            <a href="views/cart.html"><i class="fa fa-cart-plus"></i>&nbsp;&nbsp;Add to cart</a>
+		                        </div>
+		                    </div><!-- ./end wrap-text -->
+		                </div><!-- ./end thumbnail -->
+		            </div> <!-- ./end product 6 -->
+		        </div><!-- ./end container -->
+		    </div>
+		    <!-- ./end product -->
+		
+		</ui:define>
+	</ui:composition>
+	
+</h:body>
+	  
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:p="http://primefaces.org/ui">
+
+<body>
+
+	<ui:composition>
+		<nav class="navbar navbar-default" role="navigation" data-spy="affix" data-offset-top="20">
+	        <div class="container">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mega-menu">
+	                    <span class="sr-only">Toggle Navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                
+	                <a href="index.html" class="navbar-brand">Watches</a>
+	            </div><!-- ./end navbar-header -->
+	            
+	            <div class="collapse navbar-collapse" id="mega-menu">
+	                <ul class="nav navbar-nav">
+	                    <li><a href="index.xhtml">
+	                        <span class="glyphicon glyphicon-home"></span>
+	                    </a></li>
+	                    
+	                    <li class="dropdown menu-large">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men&nbsp;<b class="caret"></b></a>
+	                        
+	                        <ul class="dropdown-menu megamenu row">
+	                            <li class="col-sm-4 col-md-offset-2 col-md-2">
+	                                <ul>
+	                                  <li class="dropdown-header">Brands</li>
+	                                  <li><a href="brand.xhtml">Candino</a></li>
+	                                  <li><a href="brand.xhtml">Casio</a></li>
+	                                  <li><a href="brand.xhtml">Citizen</a></li>
+	                                  <li><a href="brand.xhtml">Seiko</a></li>
+	                                  <li><a href="brand.xhtml">OP</a></li>  
+	                                </ul>
+	                            </li>
+	                            
+	                            <li class="col-sm-4 col-md-2 hidden-xs">
+	                                <ul>
+	                                  <li class="dropdown-header">Price</li>
+	                                  <li><a href="brand.xhtml">Under 1tr</a></li>
+	                                  <li><a href="brand.xhtml">1tr - 2tr</a></li>
+	                                  <li><a href="brand.xhtml">2tr - 3tr</a></li>
+	                                  <li><a href="brand.xhtml">3tr - 4tr</a></li>
+	                                  <li><a href="brand.xhtml">Over 4tr</a></li>  
+	                                </ul>
+	                            </li>
+	                            
+	                            <li class="col-sm-4 col-md-4 col-md-offset-2 hidden-xs">
+	                                <h:graphicImage library="images" name="/products/abt-1.jpg" alt="Watches" />
+	                                
+	                                <a href="brand" role="button" class="btn btn-primary">Buy Now</a>
+	                            </li>
+	                        </ul><!-- ./end megamenu-->
+	                    </li><!-- ./end menu-large -->
+	                    
+	                    <li class="dropdown menu-large">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women&nbsp;<b class="caret"></b></a>
+	                        
+	                        <ul class="dropdown-menu megamenu row">
+	                            <li class="col-sm-4 col-md-offset-2 col-md-2">
+	                                <ul>
+	                                  <li class="dropdown-header">Brands</li>
+	                                  <li><a href="brand.xhtml">Michael Kors</a></li>
+	                                  <li><a href="brand.xhtml">Casio</a></li>
+	                                  <li><a href="brand.xhtml">Citizen</a></li>
+	                                  <li><a href="brand.xhtml">Seiko</a></li>
+	                                  <li><a href="brand.xhtml">OP</a></li>  
+	                                </ul>
+	                            </li>
+	                            
+	                            <li class="col-sm-4 col-md-2 hidden-xs">
+	                                <ul>
+	                                  <li class="dropdown-header">Price</li>
+	                                  <li><a href="brand.xhtml">Under 1tr</a></li>
+	                                  <li><a href="brand.xhtml">1tr - 2tr</a></li>
+	                                  <li><a href="brand.xhtml">2tr - 3tr</a></li>
+	                                  <li><a href="brand.xhtml">3tr - 4tr</a></li>
+	                                  <li><a href="brand.xhtml">Over 4tr</a></li>  
+	                                </ul>
+	                            </li>
+	                            
+	                            <li class="col-sm-4 col-md-4 col-md-offset-2 hidden-xs">
+	                                <h:graphicImage library="images" name="/products/abt-2.jpg" alt="Watches" />
+	                                
+	                                <a href="brand.xhtml" role="button" class="btn btn-primary">Buy Now</a>
+	                            </li>
+	                        </ul><!-- ./end megamenu-->
+	                    </li><!-- ./end menu-large -->
+	                    
+	                    <li><a href="contact.xhtml">Contact</a></li>
+	                </ul><!-- ./end navbar-collapse -->
+	                
+	                <form class="navbar-form navbar-left" role="search">
+	                    <div class="input-group">
+	                        <input type="search" class="form-control" placeholder="Search..." />
+	                        
+	                        <div class="input-group-btn">
+	                            <button type="submit" class="btn btn-default form-control">
+	                                <span class="glyphicon glyphicon-search"></span>
+	                            </button>
+	                        </div>                      
+	                    </div>
+	                </form>
+	                
+	                <ul class="nav navbar-nav navbar-right">
+	                    <!-- account -->
+	                    <li class="dropdown">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                            <i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;Sign in
+	                        </a>
+	                        
+	                        <ul class="dropdown-menu" id="login">
+	                            <form role="form" method="post" action="#">
+	                                <div class="form-group">
+	                                    <label class="sr-only" for="email">Email</label>
+	                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+	                                </div>
+	                                
+	                                <div class="form-group">
+	                                    <label class="sr-only" for="passwd">Email</label>
+	                                    <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Password" />
+	                                </div>
+	                                
+	                                <div class="form-group">
+	                                    <button type="submit" value="submit" class="btn btn-primary btn-block">Sign in</button>
+	                                </div>
+	                                
+	                                <div class="check-box">
+	                                    <label>
+	                                        <input type="checkbox" />&nbsp;Keep me logged-in
+	                                    </label>
+	                                </div>
+	                            </form>
+	                            
+	                            <div class="bottom text-center">
+	                                New here?&nbsp;
+	                                <a href="register.xhtml"><b>Join us.</b></a>
+	                            </div>
+	                        </ul>
+	                    </li>
+	                    <!-- ./end account -->
+	                    
+	                    <!-- cart -->
+	                    <li class="dropdown" id="wrapper-cart">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                            <span class="glyphicon glyphicon-shopping-cart"></span>
+	                            <span class="badge">1</span>      
+	                        </a>
+	                        
+	                        <ul class="dropdown-menu" id="cart">
+	                            <div class="row hidden-xs">
+	                                <div class="col-sm-4">
+	                                    <h:graphicImage library="images" name="/products/pr-2.jpg" alt="Watches" />
+	                                </div>
+	                                
+	                                <div class="col-sm-8">
+	                                    <h3>Lorem</h3>
+	                                    <span>Quantities:&nbsp;1</span>
+	                                    <br />
+	                                    <span>Prices:&nbsp;1.200.000 VND</span>
+	                                </div>
+	
+	                            </div>
+	                               
+	                            <div class="bottom text-center">
+	                                <a href="cart.xhtml" role="button" class="btn btn-primary">Check out</a>
+	
+	                                <a href="payment.xhtml" role="button" class="btn btn-primary">Payment</a>
+	                            </div>
+	                        </ul>
+	                    </li>
+	                    <!-- ./end cart -->
+	                </ul><!-- ./end navbar-right -->
+	            </div><!-- ./end #mega-menu -->
+	        </div><!-- ./container -->
+	    </nav>
+	</ui:composition>
+
+</body>
+	  
+</html>
