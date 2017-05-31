@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:p="http://primefaces.org/ui">
+	  
+<h:head></h:head>
+
+<h:body>
+	
+	<ui:composition template="/WEB-INF/pages/layout.xhtml">
+	
+		<!-- detail product -->
+	    <div class="container">
+	        <ol class="breadcrumb">
+	            <li><a href="index.html">Home</a></li>
+	            <li class="active">Detail Product</li>
+	        </ol>
+	        
+	        <div class="single">
+	            <div class="col-sm-8">
+	                <div class="col-sm-5">
+	                    <div class="flexslider">
+	                        <ul class="slides">
+	                            <li data-thumb="../images/products/s-1.jpg">
+	                                <div class="thumb-image">
+	                                    <img src="../images/products/s-1.jpg" data-imagezoom="true" class="img-responsive" alt="Watches" />
+	                                </div>
+	                            </li>
+	                            
+	                            <li data-thumb="../images/products/s-2.jpg">
+	                                <div class="thumb-image">
+	                                    <img src="../images/products/s-2.jpg" data-imagezoom="true" class="img-responsive" alt="Watches" />
+	                                </div>
+	                            </li>
+	                            
+	                            <li data-thumb="../images/products/s-3.jpg">
+	                                <div class="thumb-image">
+	                                    <img src="../images/products/s-3.jpg" data-imagezoom="true" class="img-responsive" alt="Watches" />
+	                                </div>
+	                            </li>
+	                        </ul>
+	                    </div><!-- ./end flexslider -->
+	                </div>
+	                
+	                <div class="col-sm-6">
+	                    <h2>Lorem Impsum</h2>
+	                    
+	                    <h4>&#36;&nbsp;95.00</h4>
+	                    
+	                    <hr />
+	                    
+	                    <ul class="info">
+	                        <li>
+	                            <span class="col-sm-3">ID</span>
+	                            <span class="col-sm-6">: 00.01</span>
+	                        </li>
+	                        
+	                        <div class="clearfix"></div>
+	                        
+	                        <li>
+	                            <span class="col-sm-3">Type</span>
+	                            <span class="col-sm-6">: Women</span>
+	                        </li>
+	                        
+	                        <div class="clearfix"></div>
+	                        
+	                        <hr />
+	                                               
+	                        <li class="quant">Quantities:&nbsp;
+	                            <div class="input-group">
+	                                <span class="input-group-btn">
+	                                    <button type="button" class="btn btn-danger btn-number form-control" data-type="minus" data-field="quant">
+	                                        <span class="glyphicon glyphicon-minus"></span>
+	                                    </button>
+	                                </span>
+	
+	                                <input type="text" name="quant" class="form-control input-number" value="1" min="0" max="100" /> 
+	
+	                                <span class="input-group-btn">
+	                                    <button type="button" class="btn btn-success btn-number form-control" data-type="plus" data-field="quant">
+	                                        <span class="glyphicon glyphicon-plus"></span>
+	                                    </button>
+	                                </span> 
+	                            </div>
+	                        </li>
+	                    </ul>
+	                    
+	                    <div class="clearfix"></div>
+	                    
+	                    <hr />
+	                                     
+	                    <button type="button" class="btn btn-default" value="Add to cart">Add to cart</button>
+	                </div>
+	                
+	                <div class="clearfix"></div>
+	                
+	                <div class="description">
+	                    <ul class="nav nav-tabs">
+	                        <li class="active">
+	                            <a href="#des1" data-toggle="tab">Description</a>
+	                        </li>
+	
+	                        <li>
+	                            <a href="#des2" data-toggle="tab">Additional Information</a>
+	                        </li>
+	                    </ul>
+	                    
+	                    <div class="tab-content">
+	                        <div class="tab-pane active" id="des1">
+	                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ab modi alias molestias ducimus soluta nemo illum nobis ipsa repellat eum, repellendus, eveniet, harum accusamus. Ut facilis ipsa doloremque totam.</p>
+	                        </div>
+	                        
+	                        <div class="tab-pane" id="des2">
+	                            <p>Lorem ea aliquip o sunt. Qui laborum si proident nam veniam sed excepteur, a an 
+	                                exquisitaque est dolore consectetur nescius sint incididunt ad deserunt fore 
+	                                pariatur deserunt, ipsum quibusdam quibusdam quo culpa incididunt occaecat iis 
+	                                laborum legam laboris. Hic e varias commodo, in culpa non eram, veniam est 
+	                                aliquip e ipsum hic ipsum te admodum. O lorem probant. Sint fabulas 
+	                                praesentibus, vidisse tamen quae nam legam, se aute varias et arbitror do est 
+	                                culpa appellat instituendarum ne possumus elit id laboris concursionibus, 
+	                                vidisse quorum vidisse mentitum, quamquam enim officia, occaecat anim quamquam 
+	                                aliquip. Est se magna malis culpa, si an magna commodo e magna deserunt aut 
+	                                domesticarum qui tamen officia e fugiat quis, a amet ingeniis probant in ex 
+	                                cillum varias irure offendit, ipsum laboris offendit, se iis distinguantur.
+	
+	                                Ingeniis summis legam eu dolor e ita quem laborum. Ex elit nulla nisi aliquip. 
+	                                Qui a duis varias minim ubi ab quorum litteris consectetur te mandaremus 
+	                                comprehenderit ad laboris non iis ne concursionibus aut id minim minim do 
+	                                ullamco non ut ne fore fugiat tamen si legam officia pariatur, ubi arbitror 
+	                                comprehenderit. Qui aliqua noster amet mentitum. Id ingeniis familiaritatem, 
+	                                anim id si duis officia, an ea esse fore esse de probant fugiat fugiat sed quis 
+	                                te incurreret ubi velit fabulas, e anim familiaritatem non iudicem si ipsum ad 
+	                                iis labore nescius tractavissent. Illum litteris consequat se officia est fugiat 
+	                                deserunt ex doctrina eu senserit, se ita fore tamen labore in a aute culpa 
+	                                multos litteris do minim eiusmod consequat, est proident praesentibus, amet 
+	                                deserunt fabulas. In irure relinqueret, ex vidisse familiaritatem a varias a 
+	                                litteris te magna ab summis iis et quae litteris. An quo duis voluptate, si hic 
+	                                sempiternum qui deserunt ad culpa litteris, dolore occaecat aut mandaremus.
+	
+	                                Offendit multos quorum sed sunt est nulla quibusdam te possumus, incurreret eram 
+	                                est quamquam concursionibus ab possumus quo legam appellat, legam expetendis 
+	                                eruditionem te doctrina quae senserit et tempor reprehenderit in cernantur eu 
+	                                mandaremus veniam esse appellat sunt. Magna iudicem ut ipsum quem. Nulla 
+	                                sempiternum possumus sint quibusdam, incididunt do minim. Probant summis ex 
+	                                officia imitarentur ne iis id veniam sint cillum. Ubi ea nulla quem amet, nam 
+	                                duis proident a est proident ne cernantur o arbitror et quibusdam. Offendit sunt 
+	                                in laboris exquisitaque ea ex quae labore dolore iudicem. Aliquip quis cernantur 
+	                                ingeniis.</p>
+	                        </div>
+	                    </div>
+	                </div><!-- ./end description -->
+	            </div>
+	            
+	            <div class="col-sm-3">
+	                <ui:include src="/WEB-INF/category.xhtml"></ui:include>
+	            </div>
+	        </div><!-- ./end single-->
+	        
+	    </div>
+	    <!-- ./end detail product -->
+	
+	</ui:composition>
+	
+</h:body>	
+
+</html>

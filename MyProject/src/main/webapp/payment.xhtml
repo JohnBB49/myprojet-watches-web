@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:p="http://primefaces.org/ui">
+	  
+<h:head></h:head>
+
+<h:body>
+	
+	<ui:composition template="/WEB-INF/pages/layout.xhtml">
+	
+		<!-- Payment -->
+	    <div class="container">
+	        <ol class="breadcrumb">
+	            <li><a href="index.xhtml">Home</a></li>
+	            <li class="active">Payment</li>
+	        </ol>
+	        
+	        <div class="row">         
+	            <form role="form">
+	                <div class="col-sm-6 form-group">
+	                    <h4>Address</h4>
+	                    
+	                    <textarea class="form-control" rows="8"></textarea>
+	
+	                    <button type="button" class="btn btn-default" value="change" style="margin-top: 20px;">Change</button>
+	                </div>
+	                
+	                <div class="col-sm-offset-1 col-sm-4 form-group">
+	                    <h4>Payment</h4>
+	                    
+	                    <div class="radio">
+	                        <label><input type="radio" name="payment" />At home</label>
+	                    </div>
+	                    
+	                    <div class="radio">
+	                        <label><input type="radio" name="payment" />Visa</label>
+	                    </div>
+	                    
+	                    <div class="radio">
+	                        <label><input type="radio" name="payment" />Master Card</label>
+	                    </div>
+	                    
+	                    <div class="radio">
+	                        <label><input type="radio" name="payment" />Paypal</label>
+	                    </div>
+	                    
+	                    <button type="submit" class="btn btn-success" value="payment">Payment</button>
+	                </div>
+	            </form>
+	        </div>         
+	    </div>
+	    <!-- ./end Payment -->
+	
+	</ui:composition>
+	
+</h:body>
+
+</html>

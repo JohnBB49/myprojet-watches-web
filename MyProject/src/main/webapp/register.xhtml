@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:p="http://primefaces.org/ui">
+	  
+<h:head></h:head>
+
+<h:body>
+
+	<ui:composition template="/WEB-INF/pages/layout.xhtml">
+	
+		<ui:define name="content">
+		
+			<!-- Register - Sign-in -->
+		    <div class="container">
+		        <ol class="breadcrumb">
+		            <li><a href="index.xhtml">Home</a></li>
+		            <li class="active">Register</li>
+		        </ol>
+		        
+		        <div class="col-sm-6">
+		            <div class="col-sm-offset-2 col-sm-8 col-sm-offset-2">
+		                <h3>Regiter</h3>
+		                
+		                <form action="#" method="post">
+		                    <div class="form-group">
+		                        <label class="sr-only" for="full-name">Full Name</label>
+		                        <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" />
+		                    </div>
+		                    
+		                    <div class="form-group">
+		                        <label class="sr-only" for="email">Email</label>
+		                        <input type="text" name="email" id="email" class="form-control" placeholder="Email" />
+		                    </div>
+		
+		                    <div class="form-group">
+		                        <label class="sr-only" for="passwd">Password</label>
+		                        <input type="password" name="passwd" id="passwd" class="form-control" placeholder="Password" />
+		                    </div>
+		
+		                    <div class="form-group">
+		                        <label class="sr-only" for="re-pass">Re-password</label>
+		                        <input type="password" name="re-passwd" id="re-pass" class="form-control" placeholder="Re-password" />
+		                    </div>
+		                    
+		                    <button class="btn btn-default" id="register" value="register">Register</button>
+		                </form>
+		            </div>       
+		        </div><!-- ./end Register -->
+		        
+		        <div class="col-sm-6">
+		            <div class="col-sm-offset-2 col-sm-8 col-sm-offset-2">
+		                <h6 style="color: #797979">Have a account?</h6>
+		                <h3>Sign-in</h3>
+		                
+		                <form action="#" method="post">
+		                    <div class="form-group">
+		                        <label class="sr-only" for="email"></label>
+		                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" />
+		                    </div>
+		                    
+		                    <div class="form-group">
+		                        <label class="sr-only" for="passwd"></label>
+		                        <input type="password" class="form-control" name="passwd" id="passwd" placeholder="Password" />
+		                    </div>
+		                    
+		                    <div class="check-box">
+		                        <label>
+		                            <input type="checkbox" />&nbsp;Keep me logged-in
+		                        </label>
+		                    </div>
+		                    
+		                    <button class="btn btn-default" id="sign-in" value="Sign-in">Sign-in</button>
+		                </form>
+		            </div>
+		        </div><!-- ./end Sign-in -->
+		    </div>
+		    <!-- ./end Register - Sign-in -->
+		
+		</ui:define>
+	
+	</ui:composition>
+
+</h:body>
+
+</html>
