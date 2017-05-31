@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan("org.o7planning.springmvcforms.*")
+@ComponentScan("com.myproject.*")
 @EnableTransactionManagement
 // Load to environment
 @PropertySource("classpath:ds-hibernate-cfg.properties")
@@ -76,7 +76,7 @@ public class ApplicationContextConfig {
 		properties.put("current_session_context_class", env.getProperty("current_session_context_class"));
 		
 		LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
-		factoryBean.setPackagesToScan(new String[] {"org.o7planning.springmvcforms.entity"});
+		factoryBean.setPackagesToScan(new String[] {"com.myproject.entity"});
 		factoryBean.setDataSource(dataSource);
 		factoryBean.setHibernateProperties(properties);
 		factoryBean.afterPropertiesSet();
